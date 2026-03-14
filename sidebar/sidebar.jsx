@@ -97,11 +97,6 @@ function App() {
 
   return (
     <div className="cookie-jar-container h-full flex flex-col bg-base-100">
-      {/* 头部 */}
-      <div className="p-4 border-b border-base-300">
-        <h1 className="text-lg font-bold text-primary">Cookies</h1>
-      </div>
-
       {/* 当前站点信息 */}
       <div className="px-4 py-2 bg-base-200">
         <div className="text-xs text-base-content/70">当前站点</div>
