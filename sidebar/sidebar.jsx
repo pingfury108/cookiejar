@@ -99,8 +99,7 @@ function App() {
     <div className="cookie-jar-container h-full flex flex-col bg-base-100">
       {/* 头部 */}
       <div className="p-4 border-b border-base-300">
-        <h1 className="text-lg font-bold text-primary">Cookie Jar</h1>
-        <p className="text-xs text-base-content/60 mt-1">站点 Cookie 查看器</p>
+        <h1 className="text-lg font-bold text-primary">Cookies</h1>
       </div>
 
       {/* 当前站点信息 */}
