@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest.json",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Cookie Jar - 站点Cookie查看器",
+  "description": "在侧边栏中查看当前打开站点的Cookie信息，支持实时获取和管理所有站点的Cookie数据",
+  "author": "pingfury",
+  "icons": {
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
+  },
+  "permissions": [
+    "contextMenus",
+    "sidePanel",
+    "storage",
+    "cookies",
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "chromium:service_worker": "background.js",
+    "firefox:scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["css/main.css"]
+    }
+  ],
+  "chromium:action": {
+    "default_icon": {
+      "48": "icon.svg"
+    },
+    "default_title": "打开侧边栏"
+  },
+  "chromium:side_panel": {
+    "default_path": "sidebar/index.html",
+    "default_title": "Cookie Jar"
+  },
+  "options_page": "options/index.html"
+}

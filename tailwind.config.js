@@ -1,0 +1,106 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./sidebar/**/*.{html,js,jsx}",
+    "./options/**/*.{html,js,jsx}",
+    "./content.js"
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: "hsl(var(--b1))",
+        foreground: "hsl(var(--fc))",
+        primary: {
+          DEFAULT: "hsl(var(--p))",
+          foreground: "hsl(var(--pc))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--s))",
+          foreground: "hsl(var(--sc))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--m))",
+          foreground: "hsl(var(--mc))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--a))",
+          foreground: "hsl(var(--ac))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--d))",
+          foreground: "hsl(var(--dc))",
+        },
+        border: "hsl(var(--b2))",
+        input: "hsl(var(--in))",
+        ring: "hsl(var(--r))",
+        radius: "var(--radius)",
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+    },
+  },
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          primary: "#3b82f6",
+          "primary-focus": "#2563eb",
+          "primary-content": "#ffffff",
+          secondary: "#64748b",
+          "secondary-focus": "#475569",
+          "secondary-content": "#ffffff",
+          accent: "#14b8a6",
+          "accent-focus": "#0f766e",
+          "accent-content": "#ffffff",
+          neutral: "#374151",
+          "neutral-focus": "#1f2937",
+          "neutral-content": "#ffffff",
+          "base-100": "#ffffff",
+          "base-200": "#f3f4f6",
+          "base-300": "#e5e7eb",
+          "base-content": "#1f2937",
+          info: "#3abff8",
+          "info-content": "#ffffff",
+          success: "#36d399",
+          "success-content": "#ffffff",
+          warning: "#fbbf24",
+          "warning-content": "#ffffff",
+          error: "#f87171",
+          "error-content": "#ffffff",
+        },
+      },
+      {
+        dark: {
+          primary: "#5b21b6",
+          "primary-focus": "#3730a3",
+          "primary-content": "#ffffff",
+          secondary: "#52525b",
+          "secondary-focus": "#404040",
+          "secondary-content": "#ffffff",
+          accent: "#14b8a6",
+          "accent-focus": "#0f766e",
+          "accent-content": "#ffffff",
+          neutral: "#3d4451",
+          "neutral-focus": "#2a2e37",
+          "neutral-content": "#ffffff",
+          "base-100": "#1d232a",
+          "base-200": "#191e24",
+          "base-300": "#15191e",
+          "base-content": "#a6adba",
+          info: "#3abff8",
+          "info-content": "#000000",
+          success: "#36d399",
+          "success-content": "#000000",
+          warning: "#fbbf24",
+          "warning-content": "#000000",
+          error: "#f87171",
+          "error-content": "#000000",
+        },
+      },
+    ],
+  },
+}
