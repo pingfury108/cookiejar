@@ -1,6 +1,6 @@
 {
   "license": "MIT",
-  "name": "cookie-jar-viewer",
+  "name": "cookiejar",
   "description": "在侧边栏中查看当前打开站点的Cookie信息",
   "type": "module",
   "version": "1.0.0",

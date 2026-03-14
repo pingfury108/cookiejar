@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/chrome-manifest.json",
   "manifest_version": 3,
   "version": "1.0.0",
-  "name": "Cookie Jar - 站点Cookie查看器",
+  "name": "CookieJar",
   "description": "在侧边栏中查看当前打开站点的Cookie信息，支持实时获取和管理所有站点的Cookie数据",
   "author": "pingfury",
   "icons": {
