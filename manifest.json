@@ -25,13 +25,7 @@
     "chromium:service_worker": "background.js",
     "firefox:scripts": ["background.js"]
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "css": ["css/main.css"]
-    }
-  ],
+
   "chromium:action": {
     "default_icon": {
       "48": "icon.svg"
